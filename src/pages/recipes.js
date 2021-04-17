@@ -8,12 +8,12 @@ import Layout from '../components/Layout'
 // Import styled-components, styledElements and helpers
 
 // markup
-const ErrorPage = () => {
+const RecipesPage = () => {
   return (
     <Layout>
-      <h1>Error Page</h1>
+      <h1>Recipes Page</h1>
     </Layout>
   )
 }
 
-export default ErrorPage
+export default RecipesPage
