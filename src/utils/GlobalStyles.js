@@ -508,10 +508,9 @@ form > *:last-child {
   .about-page {
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    height: 400px;
   }
   .about-img {
-    height: 100%;
+    height: 100%x;
   }
 }
 
