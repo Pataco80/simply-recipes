@@ -32,7 +32,7 @@ const aboutPage = () => {
             </Link>
           </article>
           <StaticImage
-            src='../images/about.jpeg'
+            src='../images/about.jpg'
             alt='Person Pouring Salt in Bowl'
             className='about-img'
           />

@@ -11,13 +11,13 @@ import Layout from '../components/Layout'
 // Import styled-components, styledElements and helpers
 
 // markup
-const HomePage = ({ children }) => {
+const HomePage = () => {
   return (
     <Layout>
       <main className='page'>
         <header className='hero'>
           <StaticImage
-            src='../images/main.jpeg'
+            src='../images/main.jpg'
             alt='hero image'
             className='hero-img'
             placeholder='blurred'
