@@ -35,5 +35,13 @@ module.exports = {
       },
       __key: 'pages',
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `nwh121i3omrp`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
   ],
 }
