@@ -5,13 +5,12 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 
 // Import styles
-import 'normalize.css'
-import GlobalStyles from '../utils/GlobalStyles'
+import GlobalStyle from '../utils/GlobalStyles'
 // Markup
 const Layout = ({ children }) => {
   return (
     <>
-      <GlobalStyles />
+      <GlobalStyle />
       <Navbar />
       {children}
       <Footer />
