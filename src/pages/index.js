@@ -7,6 +7,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 // Import Components for App
 import Layout from '../components/Layout'
+import Allrecipes from '../components/AllRecipes'
 
 // Import styled-components, styledElements and helpers
 
@@ -30,6 +31,7 @@ const HomePage = () => {
             </div>
           </div>
         </header>
+        <Allrecipes />
       </main>
     </Layout>
   )
