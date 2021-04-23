@@ -5,10 +5,7 @@ import { Link } from 'gatsby'
 
 // Import Components for App
 import logo from '../images/logo.svg'
-import { TextAlignJustify } from '@styled-icons/fluentui-system-filled/TextAlignJustify'
-
-// Import styled-components
-import styled from 'styled-components'
+import { FaAlignJustify } from 'react-icons/fa'
 
 // markup
 const Navbar = () => {
@@ -23,7 +20,7 @@ const Navbar = () => {
             <img src={logo} alt='logo' />
           </Link>
           <button className='nav-btn' onClick={() => setShow(!show)}>
-            <ToggleIcon />
+            <FaAlignJustify />
           </button>
         </div>
         <div className={show ? `nav-links show-links` : `nav-links`}>
@@ -69,10 +66,5 @@ const Navbar = () => {
     </nav>
   )
 }
-
-const ToggleIcon = styled(TextAlignJustify)`
-  height: auto;
-  width: 1.5rem;
-`
 
 export default Navbar
