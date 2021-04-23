@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'Simply Recipes',
     description: 'Nice and clean recipes site',
-    siteUrl: 'https://www.simply-recipes.netlify.app',
+    siteUrl: 'https://simply-recipes.netlify.app',
     author: '@Pataco80',
     formspreeId: process.env.GATSBY_FORMSPREE_ID,
   },
