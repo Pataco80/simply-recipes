@@ -1,5 +1,7 @@
 import React from 'react'
 import setupTags from '../utils/setupTags'
+import slugify from 'slugify'
+
 // Import Components Gatsby
 import { Link } from 'gatsby'
 // Import Components for App
@@ -15,8 +17,9 @@ const TagsList = ({ recipes }) => {
       <div className='tags-list'>
         {newTags.map((item, index) => {
           const [tag, value] = item
+          const slug = slugify(tag, { lower: true })
           return (
-            <Link Key={index} to={`/${tag}`}>
+            <Link Key={index} to={`/tags/${slug}`}>
               {tag} ({value})
             </Link>
           )

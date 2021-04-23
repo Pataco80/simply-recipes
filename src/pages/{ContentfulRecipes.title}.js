@@ -1,4 +1,5 @@
 import React from 'react'
+import slugify from 'slugify'
 
 // Import Components Gatsby
 import { graphql, Link } from 'gatsby'
@@ -83,8 +84,9 @@ const RecipeTemplate = ({ data }) => {
               <p className='recipe-tags'>
                 Tags:{' '}
                 {tags.map((tag, index) => {
+                  const slug = slugify(tag, { lower: true })
                   return (
-                    <Link key={index} to={`/${tag}`}>
+                    <Link key={index} to={`/tags/${slug}`}>
                       {tag}
                     </Link>
                   )

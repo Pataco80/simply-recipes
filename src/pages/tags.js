@@ -2,6 +2,8 @@ import React from 'react'
 
 // Import React Hooks
 import setupTags from '../utils/setupTags'
+import slugify from 'slugify'
+
 // Import Components Gatsby
 import { graphql, Link } from 'gatsby'
 
@@ -32,8 +34,10 @@ const TagsPage = ({ data }) => {
         <section className='tags-page'>
           {newTags.map((item, index) => {
             const [tag, value] = item
+            const slug = slugify(tag, { lower: true })
+
             return (
-              <Link Key={index} to={`/${tag}`} className='tag'>
+              <Link Key={index} to={`/tags/${slug}`} className='tag'>
                 <h5>{tag}</h5>
                 <p>{value} recipie</p>
               </Link>
