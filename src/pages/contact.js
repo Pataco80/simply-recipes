@@ -32,12 +32,18 @@ export const query = graphql`
         }
       }
     }
+    formspreeId: site {
+      siteMetadata {
+        formspreeId
+      }
+    }
   }
 `
 
 // markup
 const contactPage = ({ data }) => {
   const recipes = data.recipes.nodes
+  const formspreeId = data.formspreeId.siteMetadata.formspreeId
 
   return (
     <Layout>
@@ -56,7 +62,11 @@ const contactPage = ({ data }) => {
             </p>
           </article>
           <article>
-            <form className='form contact-form'>
+            <form
+              className='form contact-form'
+              action={formspreeId}
+              method='POST'
+            >
               <div className='form-row'>
                 <label htmlFor='name'>Your name</label>
                 <input type='text' id='name' name='name' />
