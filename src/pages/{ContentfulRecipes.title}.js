@@ -8,6 +8,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 // Import Components for App
 import Layout from '../components/Layout'
 import { BsClock, BsClockHistory, BsPeopleFill } from 'react-icons/bs'
+import Seo from '../components/SEO'
 
 // GraphQl Queries
 export const query = graphql`
@@ -53,6 +54,7 @@ const RecipeTemplate = ({ data }) => {
   const imagePath = getImage(image)
   return (
     <Layout>
+      <Seo title={title} description={description} />
       <main className='page'>
         <div className='recipe-page'>
           <section className='recipe-hero'>

@@ -5,6 +5,7 @@ import React from 'react'
 // Import Components for App
 import Layout from '../components/Layout'
 import AllRecipes from '../components/AllRecipes'
+import Seo from '../components/SEO'
 
 // Import styled-components, styledElements and helpers
 
@@ -12,6 +13,7 @@ import AllRecipes from '../components/AllRecipes'
 const RecipesPage = () => {
   return (
     <Layout>
+      <Seo title='All Recipes' description='Viw all recipes' />
       <main className='page'>
         <AllRecipes />
       </main>

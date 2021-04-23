@@ -8,6 +8,7 @@ import { graphql } from 'gatsby'
 // Import Components for App
 import Layout from '../components/Layout'
 import RecipesList from '../components/RecipesList'
+import Seo from '../components/SEO'
 // Import styled-components, styledElements and helpers
 
 // GraphQl Queries
@@ -47,6 +48,7 @@ const contactPage = ({ data }) => {
 
   return (
     <Layout>
+      <Seo title='Contact' description='Contact Us for more informations' />
       <main className='page'>
         <section className='contact-page'>
           <article className='contact-info'>

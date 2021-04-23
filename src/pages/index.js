@@ -8,6 +8,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 // Import Components for App
 import Layout from '../components/Layout'
 import Allrecipes from '../components/AllRecipes'
+import Seo from '../components/SEO'
 
 // Import styled-components, styledElements and helpers
 
@@ -15,6 +16,7 @@ import Allrecipes from '../components/AllRecipes'
 const HomePage = () => {
   return (
     <Layout>
+      <Seo title='Home' description='No Fluff, Just Recipes' />
       <main className='page'>
         <header className='hero'>
           <StaticImage

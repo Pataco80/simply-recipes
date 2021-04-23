@@ -9,6 +9,7 @@ import { graphql, Link } from 'gatsby'
 
 // Import Components for App
 import Layout from '../components/Layout'
+import Seo from '../components/SEO'
 
 // Import styled-components, styledElements and helpers
 
@@ -30,6 +31,7 @@ const TagsPage = ({ data }) => {
   const newTags = setupTags(tagsList)
   return (
     <Layout>
+      <Seo title='All Tags' description='Tags to All Recipes' />
       <main className='page'>
         <section className='tags-page'>
           {newTags.map((item, index) => {

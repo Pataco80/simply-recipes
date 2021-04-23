@@ -6,6 +6,7 @@ import { graphql } from 'gatsby'
 // Import Components for App
 import Layout from '../components/Layout'
 import RecipesList from '../components/RecipesList'
+import Seo from '../components/SEO'
 
 // Import styled-components, styledElements and helpers
 
@@ -16,7 +17,6 @@ export const query = graphql`
       sort: { fields: createdAt, order: DESC }
       filter: { content: { tags: { eq: $tag } } }
     ) {
-      totalCount
       nodes {
         id
         title
@@ -44,6 +44,7 @@ const TagTemplate = ({ data, pageContext }) => {
   const tagName = pageContext.tag
   return (
     <Layout>
+      <Seo title={tagName} description={` All Recipes for ${tagName}`} />
       <main className='page'>
         <h3>{tagName}</h3>
         <div>
