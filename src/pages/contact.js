@@ -45,7 +45,6 @@ export const query = graphql`
 const contactPage = ({ data }) => {
   const recipes = data.recipes.nodes
   const formspreeId = data.formspreeId.siteMetadata.formspreeId
-
   return (
     <Layout>
       <Seo title='Contact' description='Contact Us for more informations' />
