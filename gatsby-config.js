@@ -8,7 +8,7 @@ module.exports = {
     description: 'Nice and clean recipes site',
     siteUrl: 'https://simply-recipes.netlify.app',
     author: '@Pataco80',
-    formspreeId: process.env.GATSBY_FORMSPREE_ID,
+    formspreeId: `xxx`,
   },
   plugins: [
     'gatsby-plugin-styled-components',

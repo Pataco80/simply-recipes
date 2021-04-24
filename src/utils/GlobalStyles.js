@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'styled-normalize'
 
 const GlobalStyle = createGlobalStyle`
-/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400"); */
 ${normalize}
 
 *,
